@@ -1,0 +1,204 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #bdc3c7;
+    --color-white-1: #D2D9D9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+    --color-1287TD: #8b7aaf;
+    --color-blue: #aab6e0;
+    --color-c05: #6682c0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bx {
+    height: 55px;
+    width: 55px;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+}
+
+.logo {
+    color: var(--color-black);
+    font-size: 20px;
+}
+
+.logo span {
+    color: var(--color-primary);
+}
+
+.menu-bar {
+    background-color: var(--color-white);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    font-family: Impact;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li {
+    /* width: 120px; */
+    padding: 15px 28px;
+    /* text-align: center; */
+    position: relative;
+}
+
+.menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-c05);
+    text-decoration: none;
+    transition: all 0.3s;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.menu-bar ul li a:hover {
+    color: var(--color-primary);
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+
+/* dropdown menu style */
+
+.dropdown-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-white);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown-menu-1 {
+    display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-white);
+}
+
+.breadcrumb-container {
+    background-color: var(--color-white-1);
+}
+
+.testmonials {
+    position: relative;
+    max-width: 100%;
+    /*-webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009 ); */
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    min-height: 350px;
+    margin: 0 20px;
+    background: white;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    background-image: none;
+}
+
+.testmonials .card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background: #333;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.testmonials .card .layer {
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91e63);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.testmonials .card:hover .layer {
+    top: 0;
+}
+
+.testmonials .card .content {
+    position: relative;
+    z-index: 2;
+}
+
+.testmonials .card .content p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.testmonials .card .content .imgBx {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testmonials .card .content h2 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.testmonials .card .content h2 span {
+    color: #03a9f4;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.testmonials .card:hover .content h2 span {
+    color: #fff;
+}
+
+.Academics-Daily_activities .overlay-container .media-heading,
+.media-object {
+    border: none;
+}
